@@ -1,0 +1,9 @@
+services:
+  apkez:
+    build: .
+    stdin_open: true
+    tty: true
+    read_only: true
+    working_dir: /workspace
+    volumes:
+      - .:/workspace

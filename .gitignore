@@ -1,0 +1,6 @@
+# Cargo cache and build output are intentionally local to the project in this environment.
+/target
+/.target
+/.cargo-home
+*.log
+.DS_Store

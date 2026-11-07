@@ -1,0 +1,21 @@
+[package]
+name = "apkez"
+version = "0.1.0"
+edition = "2024"
+description = "A keyboard and mouse driven terminal workspace for Linux servers"
+license = "MIT"
+rust-version = "1.88"
+
+[dependencies]
+anyhow = "1.0"
+crossterm = "0.29"
+portable-pty = "0.9.0"
+ratatui = "0.30"
+sysinfo = "0.37"
+unicode-width = "0.2"
+vt100 = "0.18.1"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
